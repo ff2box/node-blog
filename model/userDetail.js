@@ -6,6 +6,7 @@ const UserDetail = new Schema({
     _id: {
         type: mongoose.Schema.Types.ObjectId,
         require: [true, "回复用户id不能为空"],
+        ref: 'users'
     },
     attentionCount: {   //可以从 friends 表获取
         type: Number,

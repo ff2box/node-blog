@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const UserDetail = mongoose.model("userDetails", require("../model/userDetail"));
+const config = require("../config");
 
 /**
  * 在创建用户的时候，就应该顺带添加该数据
@@ -84,6 +85,12 @@ async function getUserDetail(userId) {
     return UserDetail.findOne({_id: userId}).select("-__v");
 }
 
+async function getUserDetailsByPage(page = 0) {
+    const result = await UserDetail.find().populate('_id','username').skip(page * config.PageCount).limit(config.PageCount)
+        .select("-__v");
+    return result;
+}
+
 module.exports = {
     addUserDetail,
     deleteUserDetail,
@@ -91,5 +98,6 @@ module.exports = {
     updateUserDetail,
     updateUserDetailByFriend,
     updateUserDetailByBlog,
-    getUserDetail
+    getUserDetail,
+    getUserDetailsByPage,
 };

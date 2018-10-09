@@ -20,6 +20,7 @@ async function addBlog(blog) {
     blog.blogContent = "";
 
     const contentRes = await contentService.addContent(body);
+    // const contentRes = await contentService.addContent({header: blog.blogTitle, body: body});
 
     blog.contentId = contentRes._id;
     const result = await Blog.create(blog);
@@ -87,7 +88,7 @@ async function getBlogById(id) {
 }
 
 async function getBlogsByPage(userId, page = 0) {
-    const result = await Blog.find({userId: userId})
+    const result = await Blog.find({userId: userId}).populate('userId', 'username')
         .skip(page * config.PageCount).limit(config.PageCount)
         .sort("contentDesc").select("-__v");
     return result;
@@ -113,6 +114,10 @@ const userDetailService = require("../service/userDetailService");
 async function afterUpdateBlog(userId, blogCount, wordCount, getLikeCount) {
     await userDetailService.updateUserDetailByBlog(userId, blogCount, wordCount, getLikeCount);
 }
+async function getBlogByContentId(contentId){
+    const res = await Blog.findOne({contentId: contentId}).select("-__v");
+    return res;
+}
 
 module.exports = {
     addBlog,
@@ -122,5 +127,6 @@ module.exports = {
     getBlogsByPage,
 
     getBlogsTitleByUsername,
-    getAllBlogs
+    getAllBlogs,
+    getBlogByContentId,
 };

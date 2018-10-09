@@ -55,6 +55,7 @@ async function login(user) {
         expire: Date.now() + config.TokenExpire
     };
     const token = mycrypto.aesEncrypt(JSON.stringify(tokenData), config.TokenKey);
+    // console.log(`userService token : ${token}`);
     return token;
 }
 
@@ -101,10 +102,27 @@ async function afterDeleteUser(userId) {
     await userDetailService.deleteUserDetail(userId);
 }
 
+// async function getUsersByPage(page = 0) {
+//     const result = await User.find().skip(page * config.PageCount).limit(config.PageCount)
+//         .select("-__v");
+//     return result;
+// }
+
+//TODO
+async function getUsernameByid(id){
+    const username = await User.findOne({_id:id},'username').select("-_id");
+    if (!username) {
+        throw Error(`用户id ${id} 的用户名不存在。`);
+    }
+    return username;
+}
+
 module.exports = {
     register,
     getUserInfo,
     login,
     // logout,
-    deleteUser
+    deleteUser,
+    // getUsersByPage，
+    getUsernameByid
 };

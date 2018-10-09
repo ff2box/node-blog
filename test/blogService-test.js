@@ -1,5 +1,6 @@
 require('../db');
 const blogService = require("../service/blogService");
+// const User = require("../service/userService");
 
 async function testAddBlog() {
     // const blog = {
@@ -55,11 +56,11 @@ async function getAndUpdate() {
     });
 }
 
-testAddBlog();
+// testAddBlog();
 // testGetBlogById();
 // testUpdateBlog();
 // testDeleteBlog();
-// testGetBlogsByPage();
+testGetBlogsByPage();
 
 // getAndUpdate();
 

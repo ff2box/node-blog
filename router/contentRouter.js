@@ -1,11 +1,21 @@
 const router = require("express").Router();
 const contentService = require("../service/contentService");
+const userDetailService = require("../service/userDetailService");
+const userService = require("../service/userService");
+const blogService = require("../service/blogService");
 /*
  * 只提供查询的方法，别的操作是通过操作blog来实现的
  */
-router.get("/:id", async (req, res) => {
-    const result = await contentService.getContentById(req.params.id);
-    res.success(result);
+router.get("/", async (req, res) => {
+    // const result = await contentService.getContentById(req.params.id);
+    // res.success(result);
+    //TODO
+    // console.log(req.query);
+    const content = await contentService.getContentById(req.query.id);
+    const userDetail = await userDetailService.getUserDetail(req.query.userId);
+    const username = await userService.getUsernameByid(req.query.userId);
+    const blog = await blogService.getBlogByContentId(req.query.id);
+    res.success({content: content, userDetail: userDetail, username: username.username, blog: blog});
 });
 // router.post("/", async (req, res) => {
 //     const result = await contentService.addContent(req.body);
@@ -21,7 +31,13 @@ router.get("/:id", async (req, res) => {
 // });
 
 router.put("/:id", async (req, res) => {
-    const result = await contentService.updateCommentById(req.params.id, req.body);
+    let result;
+    console.log(req.body.comment);
+    if (req.body.comment) {
+        result = await contentService.updateCommentById(req.params.id, req.body.comment);
+    } else if (req.body.subComment) {
+        result = await contentService.updateCommentById(req.params.id, req.body.subComment);
+    }
     res.success(result);
 });
 

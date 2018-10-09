@@ -13,13 +13,24 @@ app.use(require("./midware/token"));
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
+/*
+localhost/wx?signature=a&echostr=b&timestamp=c&nonce=d
+获取查询参数的方式是req.query
+
+路径是localhost/wx/param1/param2/param3/param4，后面是否带查询参数都可以
+localhost/wx/a/b/c/d
+获取参数的方式是req.params
+
+对于post请求
+获取参数的方式是req.body
+ */
 //注册路由
 app.use("/index", require("./router/indexRouter"));
 app.use("/user", require("./router/userRouter"));
 app.use("/blog", require("./router/blogRouter"));
 app.use("/content", require("./router/contentRouter"));
 app.use("/friend", require("./router/friendRouter"));
-app.use("/my", require("./router/userDetailRouter"));
+app.use("/userDetail", require("./router/userDetailRouter"));
 
 //全局异常处理
 app.use((err, req, res, next) => {

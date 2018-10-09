@@ -28,7 +28,12 @@ async function testGetUserDetail() {
     const res = await userDetailService.getUserDetail(userId);
     console.log(res);
 }
+async function testGetUserDetailsByPage() {
+    const res = await userDetailService.getUserDetailsByPage(1);
+    console.log(res);
+}
 
-testAddUserDetail();
+// testAddUserDetail();
 // testUpdateUserDetail();
-// testGetUserDetail();
+testGetUserDetail();
+// testGetUserDetailsByPage();

@@ -11,7 +11,20 @@ async function addContent(body) {
 }
 
 async function getContentById(id) {
-    return await isContentExist(id);
+    // return await isContentExist(id);
+    console.log("来查博客内容了？");
+    const result = await Content.findOne({_id: id})
+    // .populate({path: 'comments.sendId', select: 'username', model: 'users'})
+    // .populate({path: 'comments.subComments.toId', select: 'username', model: 'users'})
+    // .populate({path: 'comments.subComments.sendId', select: 'username', model: 'users'});
+        .populate('comments.sendId', 'username')
+        .populate('comments.subComments.toId', 'username')
+        .populate('comments.subComments.sendId', 'username');
+
+    // console.log(result[0].comments[1].sendId);
+    // console.log(result[0].comments[1].subComments[0].sendId);
+    // console.log(result[0].comments[1].subComments[0].toId);
+    return result;
 }
 
 /*
@@ -127,6 +140,18 @@ async function updateSubCommentById(id, commentId, subComment) {
     }
 }
 
+async function changeCommentById(id, commentId, comment) {
+    const upadte = {
+        $set: {'comments.$.commentBody': comment.commentBody, 'comments.$.sendId': comment.sendId},
+        // $set: {'comments.$.title': crazy}
+    };
+    const result = await Content.updateOne({_id: id, "comments._id": commentId}, upadte);
+    console.log(result);
+    if (result.n < 1) {
+        throw Error("change评论失败！");
+    }
+}
+
 module.exports = {
     addContent,
     getContentById,
@@ -136,4 +161,5 @@ module.exports = {
 
     updateCommentById,
     updateSubCommentById,
+    changeCommentById,
 };

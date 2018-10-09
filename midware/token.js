@@ -21,7 +21,14 @@ function isExcludeUrl(url) {
 }
 
 module.exports = async (req, res, next) => {
+    if ('/favicon.ico' == req.url) {
+        res.end("");
+        return;
+    }
+
     //判断是否需要token
+    console.log(req.url);
+    // console.log(req.get("token"));
     if (!isExcludeUrl(req.url)) {
         const token = req.get("token");
         if (!token) {
@@ -30,7 +37,7 @@ module.exports = async (req, res, next) => {
         let tokenData;
         try {
             tokenData = JSON.parse(mycrypto.aesDecrypt(token, config.TokenKey));
-            console.log(tokenData);
+            // console.log(tokenData);
         } catch (e) {
             throw Error(`token 不合法，${e.toString()}`);
         }
