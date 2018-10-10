@@ -1,3 +1,4 @@
 # node-blog
 
-nodejs仿简书blog后台。
+nodejs blog后台。
+v0.1
