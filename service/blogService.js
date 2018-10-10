@@ -30,6 +30,13 @@ async function addBlog(blog) {
     return result;
 }
 
+/**
+ * 作者修改 blog 内容/标题
+ * @param id
+ * @param userId
+ * @param blog
+ * @returns {Promise<void>}
+ */
 async function updateBlog(id, userId, blog) {
     const res = await isBlogExist(id);
     if (!res) {
@@ -87,10 +94,17 @@ async function getBlogById(id) {
     return result;
 }
 
-async function getBlogsByPage(userId, page = 0) {
+async function getUserBlogsByPage(userId, page = 0) {
     const result = await Blog.find({userId: userId}).populate('userId', 'username')
         .skip(page * config.PageCount).limit(config.PageCount)
         .sort("contentDesc").select("-__v");
+    return result;
+}
+
+async function getIndexBlogsByPage(page = 0) {
+    const result = await Blog.find().populate('userId', 'username')
+        .skip(page * config.PageCount).limit(config.PageCount)
+        .sort("createdDate").select("-__v");
     return result;
 }
 
@@ -114,9 +128,24 @@ const userDetailService = require("../service/userDetailService");
 async function afterUpdateBlog(userId, blogCount, wordCount, getLikeCount) {
     await userDetailService.updateUserDetailByBlog(userId, blogCount, wordCount, getLikeCount);
 }
-async function getBlogByContentId(contentId){
+
+async function getBlogByContentId(contentId) {
     const res = await Blog.findOne({contentId: contentId}).select("-__v");
     return res;
+}
+
+const friendService = require("./friendService");
+
+async function getUserAllDetail(userId) {
+    const blogs = await getUserBlogsByPage(userId);
+    const userDetail = await userDetailService.getUserDetail(userId);
+    const friends = await friendService.getFriendById(userId);
+    const userData = {
+        myBlogs: blogs,
+        myDetail: userDetail,
+        myFriends: friends
+    };
+    return userData;
 }
 
 module.exports = {
@@ -124,9 +153,11 @@ module.exports = {
     updateBlog,
     deleteBlog,
     getBlogById,
-    getBlogsByPage,
+    getUserBlogsByPage,
 
     getBlogsTitleByUsername,
     getAllBlogs,
     getBlogByContentId,
+    getIndexBlogsByPage,
+    getUserAllDetail,
 };

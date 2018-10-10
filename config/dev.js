@@ -12,6 +12,6 @@ module.exports = {
         /.*\/user\/register/,
         /.*\/index/,
     ],
-    PageCount: 3,
+    PageCount: 7,
     Omit: "......",
 };

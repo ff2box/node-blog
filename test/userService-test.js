@@ -3,7 +3,7 @@ const userService = require("../service/userService");
 
 async function testRegister() {
     let user = {
-        username: "xbb5",
+        username: "ProgrammaLee",
         password: "123456",
         role: 1000,
         phonenumber: "17711433527"

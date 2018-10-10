@@ -109,12 +109,16 @@ async function afterDeleteUser(userId) {
 // }
 
 //TODO
-async function getUsernameByid(id){
-    const username = await User.findOne({_id:id},'username').select("-_id");
+async function getUsernameById(id) {
+    const username = await User.findOne({_id: id}, 'username').select("-_id");
     if (!username) {
         throw Error(`用户id ${id} 的用户名不存在。`);
     }
     return username;
+}
+
+async function getUserDetail(userId) {
+
 }
 
 module.exports = {
@@ -124,5 +128,6 @@ module.exports = {
     // logout,
     deleteUser,
     // getUsersByPage，
-    getUsernameByid
+    getUsernameById,
+    getUserDetail,
 };

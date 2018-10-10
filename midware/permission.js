@@ -6,7 +6,5 @@
 const role_permissions = [];
 module.exports = (req, res, next) => {
 
-
-
     next();
 };

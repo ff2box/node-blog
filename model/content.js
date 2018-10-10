@@ -56,10 +56,10 @@ Comment.add({
 });
 
 const Content = new Schema({
-    header: {
-        type: String,
-        required: [true, "博客标题不能缺少"]
-    },
+    // header: {
+    //     type: String,
+    //     required: [true, "博客标题不能缺少"]
+    // },
     //?
     // buf: {
     //     type: Buffer,

@@ -68,6 +68,31 @@ async function testChangeCommentById() {
     console.log(res);
 }
 
+async function testChangeSubCommentById() {
+    const id = "5bb7794b232dec02780c24e8";
+    const commentId= "5bb7799b60e1960fa8b8e398";
+    const subCommentId = "5bbc584869405b0a70ddb584";
+    const sendId = "5bb796e415a113298013a824";
+    const subComment = {
+        "sendId": sendId,
+    };
+    const res = await contentService.changeSubCommentById(id, commentId, subCommentId, sendId);
+    console.log(res);
+}
+
+async function testFindBySubCommentId() {
+    const id = "5bb7794b232dec02780c24e8";
+    const commentId= "5bb7799b60e1960fa8b8e398";
+    const subCommentId = "5bbc584869405b0a70ddb584";
+    const res = await contentService.findBySubCommentId(id, commentId, subCommentId);
+    console.log(res);
+    // res[0].comment.forEach(val => {
+    //     console.log(val);
+    // });
+
+}
+
+
 // testGetContentById();
 // testGetContentByIds();
 // testUpdateContentById();
@@ -76,4 +101,7 @@ async function testChangeCommentById() {
 // testUpdateCommentById();
 // testUpdateSubCommentById();
 
-testChangeCommentById();
+// testFindBySubCommentId();
+// testChangeCommentById();
+
+testChangeSubCommentById();

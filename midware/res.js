@@ -13,9 +13,9 @@ module.exports = (req, res, next) => {
             msg: "success!"
         });
     };
-    res.failure = (msg) => {
+    res.failure = (msg, code = -1) => {
         res.send({
-            code: -1,
+            code: code,
             msg: msg
         });
     };

@@ -25,6 +25,7 @@ localhost/wx/a/b/c/d
 获取参数的方式是req.body
  */
 //注册路由
+// app.use("/", require("./router/indexRouter"));
 app.use("/index", require("./router/indexRouter"));
 app.use("/user", require("./router/userRouter"));
 app.use("/blog", require("./router/blogRouter"));

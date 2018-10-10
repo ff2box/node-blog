@@ -70,7 +70,9 @@ async function removeFriend(userId, attentionId) {
 }
 
 async function getFriendById(userId) {
-    return Friend.findOne({_id: userId}).populate("attentions fans").select("-__v");
+    // .populate({path: 'comments.subComments.sendId', select: 'username', model: 'users'});
+    return Friend.findOne({_id: userId}).populate("attentions fans")
+        // .populate({path: 'attentions.$._id', select: "username", model: 'users'}).select("-__v");
 }
 
 const userDetailService = require("../service/userDetailService");

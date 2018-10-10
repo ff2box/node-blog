@@ -1,6 +1,7 @@
 require('../db');
 const friendService = require("../service/friendService");
 const mongoose = require('mongoose');
+require("../model/user");
 
 async function testAddFriend() {
     let userId;
@@ -27,7 +28,8 @@ async function testRemoveFriend() {
 }
 
 async function testGetFriendById() {
-    mongoose.model("userDetails",require("../model/userDetail"));
+    mongoose.model("userDetails", require("../model/userDetail"));
+    // mongoose.model("users", require("../model/user"));
 
     const userId = "5bb796e9cf7f213a98c5ea58";
     const res = await friendService.getFriendById(userId);
@@ -36,6 +38,6 @@ async function testGetFriendById() {
 
 // testAddFriend();
 
-testUdateFriend();
+// testUdateFriend();
 // testRemoveFriend();
-// testGetFriendById();
+testGetFriendById();

@@ -67,6 +67,7 @@ async function updateUserDetailByFriend(userId, attentionId, attention) {
  * @returns {Promise<void>}
  */
 async function updateUserDetailByBlog(userId, blogCount, wordCount, getLikeCount) {
+    //中查出来：blogCount、wordCount、getLikeCount
     const detail = await UserDetail.findOne({_id: userId}, {blogCount: 1, wordCount: 1, getLikeCount: 1});
     const update = {
         $set: {

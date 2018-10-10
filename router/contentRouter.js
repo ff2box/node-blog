@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
     // console.log(req.query);
     const content = await contentService.getContentById(req.query.id);
     const userDetail = await userDetailService.getUserDetail(req.query.userId);
-    const username = await userService.getUsernameByid(req.query.userId);
+    const username = await userService.getUsernameById(req.query.userId);
     const blog = await blogService.getBlogByContentId(req.query.id);
     res.success({content: content, userDetail: userDetail, username: username.username, blog: blog});
 });
@@ -36,19 +36,21 @@ router.put("/:id", async (req, res) => {
     if (req.body.comment) {
         result = await contentService.updateCommentById(req.params.id, req.body.comment);
     } else if (req.body.subComment) {
-        result = await contentService.updateCommentById(req.params.id, req.body.subComment);
+        req.body.subComment.sendId = req.user._id;
+        console.log(req.body);
+        result = await contentService.updateSubCommentById(req.params.id, req.body.commentId, req.body.subComment);
     }
     res.success(result);
 });
 
-router.put("/", async (req, res) => {
-    let result;
-    if (req.query.commentId) {
-        result = await contentService.updateSubCommentById(req.params.id, req.query.commentId, req.body);
-    } else {
-        result = await contentService.updateCommentById(req.params.id, req.body);
-    }
-    res.success(result);
-});
+// router.put("/", async (req, res) => {
+//     let result;
+//     if (req.query.commentId) {
+//         result = await contentService.updateSubCommentById(req.params.id, req.query.commentId, req.body);
+//     } else {
+//         result = await contentService.updateCommentById(req.params.id, req.body);
+//     }
+//     res.success(result);
+// });
 
 module.exports = router;

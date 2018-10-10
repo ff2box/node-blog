@@ -1,16 +1,15 @@
 const router = require('express').Router();
 const userService = require("../service/userService");
 
-router.get("/:username", async (req, res) => {
-    // let result;
-    // if (req.query.page) {
-    //     result = await userService.getUsersByPage(req.query.page);
-    // } else if (req.params.username) {
-    //     result = await userService.getUserInfo(req.params.username);
-    // }
-    const result = await userService.getUserInfo(req.params.username);
-    res.success(result);
+router.get("/:action", async (req, res) => {
+    if (req.req.params.action === "detail") {
+        const result = await userService.getUserDetail(req.user._id);
+        res.success(result);
+    } else {
+        res.failure("Wrong action!")
+    }
 });
+
 router.post("/register", async (req, res) => {
     const user = await userService.register(req.body);
     res.success(user);

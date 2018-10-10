@@ -1,6 +1,6 @@
 require('../db');
 const blogService = require("../service/blogService");
-// const User = require("../service/userService");
+const User = require("../service/userService");
 
 async function testAddBlog() {
     // const blog = {
@@ -42,7 +42,7 @@ async function testDeleteBlog() {
 async function testGetBlogsByPage() {
     const userId = "5bb76b5b4e6b651dd49f18f0";
     const page = 0;
-    const res = await blogService.getBlogsByPage(userId, page);
+    const res = await blogService.getUserBlogsByPage(userId, page);
     console.log(res);
 }
 
@@ -56,11 +56,25 @@ async function getAndUpdate() {
     });
 }
 
+async function testGetIndexBlogsByPage() {
+    // const page = 0;
+    const res = await blogService.getIndexBlogsByPage();
+    console.log(res);
+}
+async function testGetUserAllDetail() {
+    const userId = "5bb76b5b4e6b651dd49f18f0";
+    const res = await blogService.getUserAllDetail(userId);
+    console.log(res);
+}
+
 // testAddBlog();
 // testGetBlogById();
 // testUpdateBlog();
 // testDeleteBlog();
-testGetBlogsByPage();
+// testGetBlogsByPage();
 
 // getAndUpdate();
+// testGetIndexBlogsByPage();
+
+testGetUserAllDetail();
 
