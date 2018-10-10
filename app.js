@@ -35,7 +35,7 @@ app.use("/userDetail", require("./router/userDetailRouter"));
 
 //全局异常处理
 app.use((err, req, res, next) => {
-    res.failure(err.toString());
+    res.failure(err);
     console.log(err.toString());
 });
 

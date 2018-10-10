@@ -8,24 +8,37 @@ router.get("/", async (req, res) => {
         // } else if (req.params.id) {
         //     result = await blogService.getBlogById(req.params.id);  //router.get("/:id", async (req, res) => {
     } else {
-        res.failure("非法请求！");
+        // throw Error("非法请求！");
     }
     res.success(result);
 });
 
 router.get("/:user", async (req, res) => {
+    let result;
     if (req.params.user === "detail") {
-        const result = await blogService.getUserAllDetail(req.user._id);
-        res.success(result);
+        result = await blogService.getUserAllDetail(req.user._id);
     } else {
-        res.failure("Wrong action!")
+        // res.failure("Wrong action!")
+        throw Error("Wrong action!");
     }
+    res.success(result);
 });
 
 router.post("/", async (req, res) => {
     const blog = req.body;
     blog.userId = req.user._id;
     const result = await blogService.addBlog(blog);
+    res.success(result);
+});
+
+router.post("/:like", async (req, res) => {
+    let result;
+    if (req.params.like === "like") {
+        const userId = req.user._id;
+        result = await blogService.updateBlogDetail(userId, req.body);
+    } else {
+        // throw Error("Wrong action!!");
+    }
     res.success(result);
 });
 

@@ -32,7 +32,7 @@ router.get("/", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
     let result;
-    console.log(req.body.comment);
+    // console.log(req.body.comment);
     if (req.body.comment) {
         result = await contentService.updateCommentById(req.params.id, req.body.comment);
     } else if (req.body.subComment) {

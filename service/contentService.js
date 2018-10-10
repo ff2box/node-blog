@@ -103,7 +103,12 @@ async function updateCommentById(id, comment) {
     }
     const len = content.comments.length;
     //更新 楼数
-    comment.index = len || content.comments[len - 1].index + 1;
+    // if (content.comments[len - 1].index) {
+    //     comment.index = len || content.comments[len - 1].index;
+    // } else {
+    //     comment.index = 1;
+    // }
+    comment.index = len + 1;
 
     const upadte = {
         $addToSet: {'comments': comment},

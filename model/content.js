@@ -40,7 +40,7 @@ Comment.add({
     },
     index: {
         type: Number,
-        index: true,
+        // index: true,
         require: [true, "评论index不能为空"],
         default: 0
     },

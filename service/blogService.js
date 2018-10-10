@@ -10,6 +10,7 @@ async function isBlogExist(id) {
 
 async function addBlog(blog) {
     // const blog = req.body;
+    // const blog = req.body;
     // blog.userId = req.user._id;
     const body = blog.blogContent;
     const len = body.length;
@@ -102,6 +103,7 @@ async function getUserBlogsByPage(userId, page = 0) {
 }
 
 async function getIndexBlogsByPage(page = 0) {
+    console.log(page);
     const result = await Blog.find().populate('userId', 'username')
         .skip(page * config.PageCount).limit(config.PageCount)
         .sort("createdDate").select("-__v");
@@ -148,6 +150,35 @@ async function getUserAllDetail(userId) {
     return userData;
 }
 
+/**
+ * exm：更新喜欢blog
+ * 1、blog 更新喜欢数：需要blog id
+ // * 2、sendId 增加喜欢数：需要 req.user._id，还没有这个字段
+ * 3、toId 增加被喜欢数：需要 blog 所属用户 id
+ *
+ * findOneAndUpdate()：
+ *
+ * @returns {Promise<void>}
+ */
+async function updateBlogDetail(userId, body) {
+    /*
+    这样是可以更新的，但是不能这样写！
+     */
+    // const res = await Blog.updateOne({_id: body.blogId}, {likeCount: 100});
+
+    let res = await Blog.findOne({_id: body.blogId}, {likeCount: 1});
+    const likeCount = res.likeCount;
+    res = await Blog.updateOne({_id: body.blogId}, {likeCount: likeCount + body.like});
+    if (res.n < 1) {
+        throw Error("更新操作失败！");
+    }
+    res = await userDetailService.updateUserDetailLikeCount(body.toId, body.like);
+    return {
+        likeCount: likeCount + body.like,
+        getLikeCount: res
+    };
+}
+
 module.exports = {
     addBlog,
     updateBlog,
@@ -160,4 +191,5 @@ module.exports = {
     getBlogByContentId,
     getIndexBlogsByPage,
     getUserAllDetail,
+    updateBlogDetail,
 };

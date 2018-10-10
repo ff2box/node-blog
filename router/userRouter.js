@@ -6,7 +6,8 @@ router.get("/:action", async (req, res) => {
         const result = await userService.getUserDetail(req.user._id);
         res.success(result);
     } else {
-        res.failure("Wrong action!")
+        // res.failure("Wrong action!")
+        throw Error("Wrong action!");
     }
 });
 

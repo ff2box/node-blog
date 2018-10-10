@@ -14,7 +14,8 @@ router.put("/", async (req, res) => {
             result = "关注好友成功！";
             break;
         default:
-            res.failure("错误操作！");
+            // res.failure("错误操作！");
+            throw Error("错误操作！");
     }
     res.success(result);
 });

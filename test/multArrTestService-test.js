@@ -133,6 +133,6 @@ async function testUpdateDelete() {
 // testUpdate1();
 // testUpdate2();
 
-// testAggregate();
-testUpdateDelete();
+testAggregate();
+// testUpdateDelete();
 // testUpdateModify();

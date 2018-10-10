@@ -71,8 +71,12 @@ async function removeFriend(userId, attentionId) {
 
 async function getFriendById(userId) {
     // .populate({path: 'comments.subComments.sendId', select: 'username', model: 'users'});
-    return Friend.findOne({_id: userId}).populate("attentions fans")
-        // .populate({path: 'attentions.$._id', select: "username", model: 'users'}).select("-__v");
+    // return Friend.findOne({_id: userId}).populate("attentions fans")
+    // .populate({path: 'attentions.$._id', select: "username", model: 'users'}).select("-__v");
+    return Friend.findOne({_id: userId}).populate({
+        path: 'attentions fans', select: '-__v', model: 'userDetails',
+        populate: {path: '_id', select: 'username', model: 'users'}
+    });
 }
 
 const userDetailService = require("../service/userDetailService");

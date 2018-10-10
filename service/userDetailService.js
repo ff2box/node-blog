@@ -87,9 +87,19 @@ async function getUserDetail(userId) {
 }
 
 async function getUserDetailsByPage(page = 0) {
-    const result = await UserDetail.find().populate('_id','username').skip(page * config.PageCount).limit(config.PageCount)
+    const result = await UserDetail.find().populate('_id', 'username').skip(page * config.PageCount).limit(config.PageCount)
         .select("-__v");
     return result;
+}
+
+async function updateUserDetailLikeCount(id, like) {
+    let res = await UserDetail.findOne({_id: id}, {getLikeCount: 1});
+    const getLikeCount = res.getLikeCount;
+    res = await UserDetail.updateOne({_id: id}, {getLikeCount: getLikeCount + like});
+    if (res.n < 1) {
+        throw Error("更新操作失败！");
+    }
+    return getLikeCount + like;
 }
 
 module.exports = {
@@ -101,4 +111,5 @@ module.exports = {
     updateUserDetailByBlog,
     getUserDetail,
     getUserDetailsByPage,
+    updateUserDetailLikeCount,
 };

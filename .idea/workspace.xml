@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/service/contentService.js" line="208" />
+    <bookmark url="file://$PROJECT_DIR$/service/contentService.js" line="213" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e84d4b5-df4f-4aaf-b249-46cbe07fe8bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/multArrTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midware/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/midware/permission.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midware/res.js" beforeDir="false" afterPath="$PROJECT_DIR$/midware/res.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midware/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/midware/token.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/blogRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/blogRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/contentRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/contentRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/friendRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/friendRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/indexRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/indexRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/userRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/userRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/blogService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/blogService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/contentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/contentService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/friendService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/friendService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/userDetailService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/userDetailService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/userService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/blogService-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/blogService-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/contentService-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/contentService-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/friendService-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/friendService-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/userService-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/userService-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/multArrTestService-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/multArrTestService-test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,6 +29,25 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/service/multArrTestService.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="2408">
+                    <caret line="315" column="54" lean-forward="true" selection-start-line="315" selection-start-column="54" selection-end-line="315" selection-end-column="54" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="765600112">
@@ -53,22 +64,22 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="js" value="350" />
+          <entry key="js" value="372" />
           <entry key="json" value="6" />
-          <entry key="ts" value="1" />
+          <entry key="ts" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="350" />
+          <entry key="JavaScript" value="372" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="1" />
+          <entry key="TypeScript" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="21658" />
+          <entry key="js" value="23382" />
           <entry key="json" value="28" />
           <entry key="txt" value="24" />
         </counts>
@@ -76,7 +87,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="28" />
-          <entry key="JavaScript" value="21658" />
+          <entry key="JavaScript" value="23382" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -87,35 +98,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            <state relative-caret-position="346">
+              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/contentService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1584">
-              <caret line="234" selection-start-line="234" selection-end-line="400" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/blogService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/friendService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+            <state relative-caret-position="64">
+              <caret line="129" column="15" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -123,53 +116,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router/contentRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="16">
+              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/router/indexRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/friendService-test.js">
+        <entry file="file://$PROJECT_DIR$/router/blogRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="17" selection-start-line="42" selection-end-line="42" selection-end-column="17" />
+            <state relative-caret-position="484">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/friend.js">
+        <entry file="file://$PROJECT_DIR$/service/blogService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/userDetail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/userDetailService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/midware/res.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="268">
+              <caret line="108" column="44" lean-forward="true" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -186,9 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tokenData = JSON.parse(mycrypto.aesEncrypt(token,config.TokenKey));</find>
-      <find>userDetails</find>
-      <find>addFriend</find>
       <find>*.sw</find>
       <find>populate</find>
       <find>$</find>
@@ -208,8 +180,17 @@
       <find>getIndexBlogsByPage</find>
       <find>detail</find>
       <find>frie</find>
-      <find>.failure(</find>
       <find>.populate(</find>
+      <find>userDetails</find>
+      <find>/model/</find>
+      <find>EvalErrorConstructor</find>
+      <find>Error</find>
+      <find>ErrorEvent</find>
+      <find>content.comments[len - 1]</find>
+      <find>.updateOne({</find>
+      <find>andupdate</find>
+      <find>.failure(</find>
+      <find>userDetail</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -226,40 +207,40 @@
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/util/routerUtil.js" />
         <option value="$PROJECT_DIR$/model/blog.js" />
-        <option value="$PROJECT_DIR$/router/friendRouter.js" />
         <option value="$PROJECT_DIR$/model/friend.js" />
         <option value="$PROJECT_DIR$/config/prod.js" />
         <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/model/userDetail.js" />
         <option value="$PROJECT_DIR$/test/userDetailService-test.js" />
-        <option value="$PROJECT_DIR$/service/userDetailService.js" />
         <option value="$PROJECT_DIR$/model/test.js" />
         <option value="$PROJECT_DIR$/model/multArrTest.js" />
         <option value="$PROJECT_DIR$/model/myTest.js" />
-        <option value="$PROJECT_DIR$/test/multArrTestService-test.js" />
         <option value="$PROJECT_DIR$/test/contentService-test.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/db.js" />
-        <option value="$PROJECT_DIR$/service/multArrTestService.js" />
-        <option value="$PROJECT_DIR$/service/contentService.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/config/dev.js" />
         <option value="$PROJECT_DIR$/router/userDetailRouter.js" />
-        <option value="$PROJECT_DIR$/router/indexRouter.js" />
-        <option value="$PROJECT_DIR$/model/content.js" />
-        <option value="$PROJECT_DIR$/router/contentRouter.js" />
         <option value="$PROJECT_DIR$/test/userService-test.js" />
         <option value="$PROJECT_DIR$/service/userService.js" />
         <option value="$PROJECT_DIR$/router/userRouter.js" />
         <option value="$PROJECT_DIR$/test/blogService-test.js" />
-        <option value="$PROJECT_DIR$/router/blogRouter.js" />
-        <option value="$PROJECT_DIR$/midware/res.js" />
-        <option value="$PROJECT_DIR$/midware/token.js" />
         <option value="$PROJECT_DIR$/midware/permission.js" />
-        <option value="$PROJECT_DIR$/service/blogService.js" />
         <option value="$PROJECT_DIR$/test/friendService-test.js" />
         <option value="$PROJECT_DIR$/service/friendService.js" />
+        <option value="$PROJECT_DIR$/router/friendRouter.js" />
+        <option value="$PROJECT_DIR$/midware/token.js" />
+        <option value="$PROJECT_DIR$/model/content.js" />
+        <option value="$PROJECT_DIR$/service/contentService.js" />
+        <option value="$PROJECT_DIR$/test/multArrTestService-test.js" />
+        <option value="$PROJECT_DIR$/service/multArrTestService.js" />
+        <option value="$PROJECT_DIR$/midware/res.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/router/blogRouter.js" />
+        <option value="$PROJECT_DIR$/service/userDetailService.js" />
+        <option value="$PROJECT_DIR$/router/contentRouter.js" />
+        <option value="$PROJECT_DIR$/service/blogService.js" />
+        <option value="$PROJECT_DIR$/router/indexRouter.js" />
       </list>
     </option>
   </component>
@@ -277,8 +258,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="907" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="910" />
     <option name="y" value="32" />
     <option name="width" value="1021" />
     <option name="height" value="960" />
@@ -368,37 +349,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.friendService-test.js">
+  <component name="RunManager" selected="Node.js.app.js">
     <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="blogRouter.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="blogRouter.js" working-dir="$PROJECT_DIR$/router">
       <method v="2" />
     </configuration>
     <configuration name="blogService-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="blogService-test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="contentService-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="contentService-test.js" working-dir="$PROJECT_DIR$/test">
-      <method v="2" />
-    </configuration>
     <configuration name="friendService-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="friendService-test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="userService-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="userService-test.js" working-dir="$PROJECT_DIR$/test">
+    <configuration name="multArrTestService-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="multArrTestService-test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Node.js.bin\www" />
-      <item itemvalue="Node.js.contentService-test.js" />
       <item itemvalue="Node.js.app.js" />
       <item itemvalue="Node.js.blogService-test.js" />
-      <item itemvalue="Node.js.userService-test.js" />
       <item itemvalue="Node.js.friendService-test.js" />
+      <item itemvalue="Node.js.multArrTestService-test.js" />
+      <item itemvalue="Node.js.blogRouter.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.friendService-test.js" />
         <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.blogRouter.js" />
+        <item itemvalue="Node.js.multArrTestService-test.js" />
+        <item itemvalue="Node.js.friendService-test.js" />
         <item itemvalue="Node.js.blogService-test.js" />
-        <item itemvalue="Node.js.userService-test.js" />
-        <item itemvalue="Node.js.contentService-test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +402,7 @@
       <workItem from="1539009671031" duration="259000" />
       <workItem from="1539010039108" duration="8785000" />
       <workItem from="1539065193056" duration="43644000" />
-      <workItem from="1539154065934" duration="387000" />
+      <workItem from="1539154065934" duration="21625000" />
     </task>
     <task id="LOCAL-00001" summary="myblog website by nodejs">
       <created>1538823503712</created>
@@ -434,7 +415,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156922000" />
+    <option name="totallyTimeSpent" value="178160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,10 +427,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="910" y="32" width="1021" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09778012" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18423747" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
@@ -461,7 +442,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3281075" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.30795074" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.49811795" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32886723" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.3281075" />
@@ -499,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="988" column="4" selection-start-line="988" selection-start-column="4" selection-end-line="988" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/schema/array.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1117">
@@ -514,13 +488,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/routerUtil.js" />
-    <entry file="file://$PROJECT_DIR$/router/friendRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/prod.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -588,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/multArrTestService-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -609,31 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/multArrTestService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="162" column="40" lean-forward="true" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/blog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -679,34 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router/indexRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/blogService-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/router/blogRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/midware/token.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/midware/permission.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -714,73 +625,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/model/userDetail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/blogService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="75" column="53" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/friendService-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="17" selection-start-line="42" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="440">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/friend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/userDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/userDetailService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/midware/res.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="286">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/friendService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+        <state relative-caret-position="176">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router/contentRouter.js">
+    <entry file="file://$PROJECT_DIR$/test/friendService-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/friendRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="5181" column="25" selection-start-line="5181" selection-start-column="15" selection-end-line="5181" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/midware/token.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <caret line="909" column="12" selection-start-line="909" selection-start-column="5" selection-end-line="909" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/multArrTestService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2408">
+          <caret line="315" column="54" lean-forward="true" selection-start-line="315" selection-start-column="54" selection-end-line="315" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/midware/res.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/blogRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/multArrTestService-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="135" column="16" lean-forward="true" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/userDetailService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="95" column="63" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/blogService-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/contentService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1584">
-          <caret line="234" selection-start-line="234" selection-end-line="400" selection-end-column="1" />
+        <state relative-caret-position="64">
+          <caret line="129" column="15" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/contentRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/blogService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="108" column="44" lean-forward="true" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/indexRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>
