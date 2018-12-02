@@ -103,7 +103,7 @@ windows 下使用 git-bash 或者 cmder 等终端执行以下命令:
 
 查询数据库截图中的toId字段值：
 
-![image](https://github.com/Pologinfeejz/node-blog/mongodb_aggregate.jpg)
+![image](https://github.com/Pologinfeejz/node-blog/blob/master/mongodb_aggregate.jpg)
 
 ```javascript
 async function findBySubCommentId(id, commentId, subCommentId) {
