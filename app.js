@@ -10,7 +10,7 @@ const app = express();
 app.use(require("./midware/res"));
 app.use(require("./midware/permission"));
 app.use(require("./midware/token"));
-app.use(morgan('combined'));
+app.use(morgan('combined'));    //日志中间件
 app.use(bodyParser.json());
 
 /*
